@@ -18,8 +18,6 @@ npm run docs:dev
 
 英文版
 
-docker主页面的导航
-
 快速上手页面的编写
 
 java9到java21md文档的编写
