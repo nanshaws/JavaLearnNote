@@ -4,15 +4,15 @@
 
 **arrays类:**
 
-1. **compare方法**
-2. **equals方法**
-3. **mismatch方法**
+1. **compare方法**：其本质效果就是：数组相等就返回0，不相等就返回-1
+2. **equals方法**：其本质效果就是：数组相等就返回true，不相等就返回flase
+3. **mismatch方法**：其本质效果就是：返回数组第一个不匹配的下标
 
 **collection类:**
 
-1. **<E> List<E> of(E e1)方法**
-2. **<K, V> Map<K, V> of(K k1, V v1)**
-3. **<E> Set<E> of(E e1, E e2, E e3)方法**
+1. **List of(E e1)方法**：返回list集合
+2. **<K, V> Map<K, V> of(K k1, V v1)**：返回map集合
+3. **Set of(E e1, E e2, E e3)方法**：返回set集合
 
 **flowapi类**:
 
@@ -43,7 +43,6 @@
 ## arrays
 
 ### compare方法源码：
-
 ```
 public static int compare(int[] a, int[] b) {
         if (a == b)
@@ -60,9 +59,6 @@ public static int compare(int[] a, int[] b) {
         return a.length - b.length;
     }
 ```
-
-其本质效果就是：数组相等就返回0，不相等就返回-1
-
 ### equals方法源码：
 
 ```
@@ -80,8 +76,6 @@ public static boolean equals(int[] a, int[] a2) {
     }
 ```
 
-其本质效果就是：数组相等就返回true，不相等就返回flase
-
 ### mismatch方法源码
 
 ```
@@ -94,8 +88,6 @@ public static boolean equals(int[] a, int[] a2) {
         return (i < 0 && a.length != b.length) ? length : i;
     }
 ```
-
-其本质效果就是：返回数组第一个不匹配的下标
 
 ## collection
 
@@ -211,7 +203,6 @@ public class FlowAPIExample {
 }
 
 ```
-
 ## completablefuture
 
 ```
