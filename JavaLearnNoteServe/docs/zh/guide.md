@@ -11,19 +11,19 @@ actionButtons:
 
 <!-- 绝对路径 -->
 
-[java9](/java/java9.md)  
-[java10](/java/java10.md) 
-[java11](/java/java11.md) 
-[java12](/java/java12.md) 
-[java13](/java/java13.md) 
-[java14](/java/java14.md) 
-[java15](/java/java15.md) 
-[java16](/java/java16.md) 
-[java17](/java/java17.md) 
-[java18](/java/java18.md) 
-[java19](/java/java19.md) 
-[java20](/java/java20.md) 
-[java21](/java/java21.md) 
+[java9](/java/java9)  
+[java10](/java/java10) 
+[java11](/java/java11) 
+[java12](/java/java12) 
+[java13](/java/java13) 
+[java14](/java/java14) 
+[java15](/java/java15) 
+[java16](/java/java16) 
+[java17](/java/java17) 
+[java18](/java/java18) 
+[java19](/java/java19) 
+[java20](/java/java20) 
+[java21](/java/java21) 
 
 
 
