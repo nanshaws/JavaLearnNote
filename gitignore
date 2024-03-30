@@ -1,7 +1,7 @@
-node_modules
+JavaLearnNoteServe/node_modules
 .DS_Store
-dist
-dist-ssr
+JavaLearnNoteServe/dist
+JavaLearnNoteServe/dist-ssr
 *.local
 .eslintcache
 report.html
