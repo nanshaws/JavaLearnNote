@@ -18,6 +18,4 @@ npm run docs:dev
 
 英文版
 
-快速上手页面的编写
-
-java9到java21md文档的编写
+java18到java21md文档的编写
