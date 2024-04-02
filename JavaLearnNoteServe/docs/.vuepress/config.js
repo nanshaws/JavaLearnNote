@@ -12,6 +12,7 @@ module.exports = {
       nav: [
         { text: 'Home', link: '/' },
         { text: 'Docker', link: '/docker/' },
+        { text: 'Libgdx', link: '/libgdx/' },
         { text: 'Github', link: 'https://github.com/nanshaws/JavaLearnNote' },
         {
             text: 'Languages',
