@@ -5,6 +5,11 @@ module.exports = {
       ['link',{rel: 'icon', href: '/assets/java.png'}],
       ['meta',{name: 'author',content:"nanshaws"}],
       ['meta',{name: 'keywords',content:"java9到java21的新特性"}],
+      ['script', {
+      async: true,
+      src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3949519489131784",
+      crossorigin: "anonymous"
+	  }]
     ],
     themeConfig: {
       lastUpdated: '更新时间',
@@ -12,6 +17,7 @@ module.exports = {
       nav: [
         { text: 'Home', link: '/' },
         { text: 'Docker', link: '/docker/' },
+		{ text: '🚀 资源工具箱', link: 'https://nanshaws.top' },
         { text: 'Libgdx', link: '/libgdx/' },
         { text: 'Github', link: 'https://github.com/nanshaws/JavaLearnNote' },
         {

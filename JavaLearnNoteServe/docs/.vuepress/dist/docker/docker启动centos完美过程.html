@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>docker启动centos | 想飞跃的鱼</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/assets/java.png">
+    <script async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3949519489131784" crossorigin="anonymous"></script>
+    <meta name="description" content="想飞跃的鱼">
+    <meta name="author" content="nanshaws">
+    <meta name="keywords" content="java9到java21的新特性">
+    
+    <link rel="preload" href="/assets/css/0.styles.0b13978b.css" as="style"><link rel="preload" href="/assets/js/app.0f0c0a0b.js" as="script"><link rel="preload" href="/assets/js/2.40583da7.js" as="script"><link rel="preload" href="/assets/js/1.8d6a2866.js" as="script"><link rel="preload" href="/assets/js/34.f093baf9.js" as="script"><link rel="prefetch" href="/assets/js/10.22fe1c30.js"><link rel="prefetch" href="/assets/js/11.c9ec652a.js"><link rel="prefetch" href="/assets/js/12.d7fcdecd.js"><link rel="prefetch" href="/assets/js/13.23d445f6.js"><link rel="prefetch" href="/assets/js/14.10f1cf99.js"><link rel="prefetch" href="/assets/js/15.ad60ec71.js"><link rel="prefetch" href="/assets/js/16.85d7f603.js"><link rel="prefetch" href="/assets/js/17.93155b2b.js"><link rel="prefetch" href="/assets/js/18.207be5a1.js"><link rel="prefetch" href="/assets/js/19.7b8b8abc.js"><link rel="prefetch" href="/assets/js/20.21213842.js"><link rel="prefetch" href="/assets/js/21.b64a33f0.js"><link rel="prefetch" href="/assets/js/22.3f62f6f6.js"><link rel="prefetch" href="/assets/js/23.9dc0e61f.js"><link rel="prefetch" href="/assets/js/24.c66fd85a.js"><link rel="prefetch" href="/assets/js/25.0ced4503.js"><link rel="prefetch" href="/assets/js/26.3c33bb43.js"><link rel="prefetch" href="/assets/js/27.1d23e659.js"><link rel="prefetch" href="/assets/js/28.50874027.js"><link rel="prefetch" href="/assets/js/29.1d32284e.js"><link rel="prefetch" href="/assets/js/3.66fb2280.js"><link rel="prefetch" href="/assets/js/30.d5f45057.js"><link rel="prefetch" href="/assets/js/31.16596c7e.js"><link rel="prefetch" href="/assets/js/32.c795dff9.js"><link rel="prefetch" href="/assets/js/33.8a970256.js"><link rel="prefetch" href="/assets/js/35.030a1343.js"><link rel="prefetch" href="/assets/js/36.73387d9a.js"><link rel="prefetch" href="/assets/js/37.6be2bd73.js"><link rel="prefetch" href="/assets/js/38.d68655ca.js"><link rel="prefetch" href="/assets/js/39.a27a0cc6.js"><link rel="prefetch" href="/assets/js/4.9d42fcb6.js"><link rel="prefetch" href="/assets/js/40.a0edd650.js"><link rel="prefetch" href="/assets/js/41.909e5a9c.js"><link rel="prefetch" href="/assets/js/42.0253fc78.js"><link rel="prefetch" href="/assets/js/43.848435c8.js"><link rel="prefetch" href="/assets/js/44.05cb9cc6.js"><link rel="prefetch" href="/assets/js/45.c6c4a5ca.js"><link rel="prefetch" href="/assets/js/46.3dfdcc88.js"><link rel="prefetch" href="/assets/js/47.94b8c79a.js"><link rel="prefetch" href="/assets/js/48.badd48d0.js"><link rel="prefetch" href="/assets/js/49.18ec2b52.js"><link rel="prefetch" href="/assets/js/5.ecea7096.js"><link rel="prefetch" href="/assets/js/50.6b4e3d41.js"><link rel="prefetch" href="/assets/js/51.e8da6188.js"><link rel="prefetch" href="/assets/js/52.fda9a015.js"><link rel="prefetch" href="/assets/js/53.f81e93ac.js"><link rel="prefetch" href="/assets/js/54.f8fceb3e.js"><link rel="prefetch" href="/assets/js/55.be16539d.js"><link rel="prefetch" href="/assets/js/56.57f0f2cc.js"><link rel="prefetch" href="/assets/js/57.7e4bc46a.js"><link rel="prefetch" href="/assets/js/58.707baad1.js"><link rel="prefetch" href="/assets/js/59.40a0f865.js"><link rel="prefetch" href="/assets/js/6.9ef3b352.js"><link rel="prefetch" href="/assets/js/60.9542957e.js"><link rel="prefetch" href="/assets/js/61.6a8eeef8.js"><link rel="prefetch" href="/assets/js/7.27163696.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.025955af.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0b13978b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/logo.png" alt="想飞跃的鱼" class="logo"> <span class="site-name can-hide">想飞跃的鱼</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/docker/" class="nav-link router-link-active">
+  Docker
+</a></div><div class="nav-item"><a href="https://nanshaws.top" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🚀 资源工具箱
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/libgdx/" class="nav-link">
+  Libgdx
+</a></div><div class="nav-item"><a href="https://github.com/nanshaws/JavaLearnNote" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zh/guide/" class="nav-link">
+  Chinese
+</a></li><li class="dropdown-item"><!----> <a href="/en/guide/" class="nav-link">
+  English
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/docker/" class="nav-link router-link-active">
+  Docker
+</a></div><div class="nav-item"><a href="https://nanshaws.top" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🚀 资源工具箱
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/libgdx/" class="nav-link">
+  Libgdx
+</a></div><div class="nav-item"><a href="https://github.com/nanshaws/JavaLearnNote" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zh/guide/" class="nav-link">
+  Chinese
+</a></li><li class="dropdown-item"><!----> <a href="/en/guide/" class="nav-link">
+  English
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>docker启动centos</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docker/docker%E5%90%AF%E5%8A%A8centos%E5%AE%8C%E7%BE%8E%E8%BF%87%E7%A8%8B.html#第一步拉取镜像" class="sidebar-link">第一步拉取镜像</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docker/docker%E5%90%AF%E5%8A%A8centos%E5%AE%8C%E7%BE%8E%E8%BF%87%E7%A8%8B.html#第二步创建容器" class="sidebar-link">第二步创建容器</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docker/docker%E5%90%AF%E5%8A%A8centos%E5%AE%8C%E7%BE%8E%E8%BF%87%E7%A8%8B.html#第三步进入容器" class="sidebar-link">第三步进入容器</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docker/docker%E5%90%AF%E5%8A%A8centos%E5%AE%8C%E7%BE%8E%E8%BF%87%E7%A8%8B.html#第四步测试yum镜像" class="sidebar-link">第四步测试yum镜像</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docker/docker%E5%90%AF%E5%8A%A8centos%E5%AE%8C%E7%BE%8E%E8%BF%87%E7%A8%8B.html#第五步查看结果" class="sidebar-link">第五步查看结果</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docker/docker%E5%90%AF%E5%8A%A8centos%E5%AE%8C%E7%BE%8E%E8%BF%87%E7%A8%8B.html#关于centos8的换源方案" class="sidebar-link">关于centos8的换源方案</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="docker启动centos"><a href="#docker启动centos" class="header-anchor">#</a> docker启动centos</h1> <h2 id="第一步拉取镜像"><a href="#第一步拉取镜像" class="header-anchor">#</a> 第一步拉取镜像</h2> <div class="language-java extra-class"><pre class="language-java"><code>docker pull centos<span class="token operator">:</span><span class="token number">7</span>
+</code></pre></div><p>这里要注意的是，7版本和8版本的yum地址不一样</p> <p>如果用centos7版本的就可以不用换yum镜像了</p> <h2 id="第二步创建容器"><a href="#第二步创建容器" class="header-anchor">#</a> 第二步创建容器</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">docker</span> run <span class="token parameter variable">-it</span> <span class="token parameter variable">-d</span> <span class="token parameter variable">--name</span> centos001 centos /bin/bash
+</code></pre></div><h2 id="第三步进入容器"><a href="#第三步进入容器" class="header-anchor">#</a> 第三步进入容器</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">docker</span> <span class="token builtin class-name">exec</span> <span class="token parameter variable">-it</span> centos001 /bin/bash
+</code></pre></div><h2 id="第四步测试yum镜像"><a href="#第四步测试yum镜像" class="header-anchor">#</a> 第四步测试yum镜像</h2> <div class="language-bash extra-class"><pre class="language-bash"><code>yum <span class="token function">install</span> <span class="token function">vim</span>
+</code></pre></div><h2 id="第五步查看结果"><a href="#第五步查看结果" class="header-anchor">#</a> 第五步查看结果</h2> <div class="language-bash extra-class"><pre class="language-bash"><code>Installed:
+  vim-enhanced.x86_64 <span class="token number">2</span>:7.4.629-8.el7_9
+
+Dependency Installed:
+  gpm-libs.x86_64 <span class="token number">0</span>:1.20.7-6.el7                               groff-base.x86_64 <span class="token number">0</span>:1.22.2-8.el7
+  perl.x86_64 <span class="token number">4</span>:5.16.3-299.el7_9                               perl-Carp.noarch <span class="token number">0</span>:1.26-244.el7
+  perl-Encode.x86_64 <span class="token number">0</span>:2.51-7.el7                              perl-Exporter.noarch <span class="token number">0</span>:5.68-3.el7
+  perl-File-Path.noarch <span class="token number">0</span>:2.09-2.el7                           perl-File-Temp.noarch <span class="token number">0</span>:0.23.01-3.el7
+  perl-Filter.x86_64 <span class="token number">0</span>:1.49-3.el7                              perl-Getopt-Long.noarch <span class="token number">0</span>:2.40-3.el7
+  perl-HTTP-Tiny.noarch <span class="token number">0</span>:0.033-3.el7                          perl-PathTools.x86_64 <span class="token number">0</span>:3.40-5.el7
+  perl-Pod-Escapes.noarch <span class="token number">1</span>:1.04-299.el7_9                     perl-Pod-Perldoc.noarch <span class="token number">0</span>:3.20-4.el7
+  perl-Pod-Simple.noarch <span class="token number">1</span>:3.28-4.el7                          perl-Pod-Usage.noarch <span class="token number">0</span>:1.63-3.el7
+  perl-Scalar-List-Utils.x86_64 <span class="token number">0</span>:1.27-248.el7                 perl-Socket.x86_64 <span class="token number">0</span>:2.010-5.el7
+  perl-Storable.x86_64 <span class="token number">0</span>:2.45-3.el7                            perl-Text-ParseWords.noarch <span class="token number">0</span>:3.29-4.el7
+  perl-Time-HiRes.x86_64 <span class="token number">4</span>:1.9725-3.el7                        perl-Time-Local.noarch <span class="token number">0</span>:1.2300-2.el7
+  perl-constant.noarch <span class="token number">0</span>:1.27-2.el7                            perl-libs.x86_64 <span class="token number">4</span>:5.16.3-299.el7_9
+  perl-macros.x86_64 <span class="token number">4</span>:5.16.3-299.el7_9                        perl-parent.noarch <span class="token number">1</span>:0.225-244.el7
+  perl-podlators.noarch <span class="token number">0</span>:2.5.1-3.el7                          perl-threads.x86_64 <span class="token number">0</span>:1.87-4.el7
+  perl-threads-shared.x86_64 <span class="token number">0</span>:1.43-6.el7                      vim-common.x86_64 <span class="token number">2</span>:7.4.629-8.el7_9
+  vim-filesystem.x86_64 <span class="token number">2</span>:7.4.629-8.el7_9                      which.x86_64 <span class="token number">0</span>:2.20-7.el7
+
+Complete<span class="token operator">!</span>
+</code></pre></div><h2 id="关于centos8的换源方案"><a href="#关于centos8的换源方案" class="header-anchor">#</a> 关于centos8的换源方案</h2> <p>本人极其不推荐centos8版本的，但为了保持完美这里我还是说一下如何更换centos8的镜像(这里的centos001是8版本的)</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token number">1</span>.在宿主机上创建文件夹centos8Test
+
+<span class="token number">2</span>.将容器/etc/yum.repos.d/   这个目录里面的东西全部移动到bak里面
+<span class="token builtin class-name">cd</span> /etc/yum.repos.d/
+<span class="token function">mkdir</span> bak
+<span class="token function">mv</span> * bak/
+
+<span class="token number">3</span>.下载阿里云的文件
+<span class="token function">wget</span> https://mirrors.aliyun.com/repo/Centos-vault-8.5.2111.repo <span class="token parameter variable">-O</span> /root/centos8Test/Centos-vault-8.5.2111.repo
+<span class="token function">wget</span> https://mirrors.aliyun.com/repo/epel-archive-8.repo <span class="token parameter variable">-O</span> /root/centos8Test/epel-archive-8.repo
+
+<span class="token number">4</span>.docker的拷贝到容器的yum那边
+<span class="token function">docker</span> <span class="token function">cp</span> ./Centos-vault-8.5.2111.repo centos001:/etc/yum.repos.d/Centos-vault-8.5.2111.repo
+<span class="token function">docker</span> <span class="token function">cp</span> ./epel-archive-8.repo centos001:/etc/yum.repos.d/epel-archive-8.repo
+
+<span class="token number">5</span>.进入容器
+<span class="token function">docker</span> <span class="token builtin class-name">exec</span> <span class="token parameter variable">-it</span> centos001 /bin/bash
+
+<span class="token number">6</span>.执行命令清空缓存
+yum clean all <span class="token operator">&amp;&amp;</span> yum makecache
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">3/29/2024, 4:13:36 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.0f0c0a0b.js" defer></script><script src="/assets/js/2.40583da7.js" defer></script><script src="/assets/js/1.8d6a2866.js" defer></script><script src="/assets/js/34.f093baf9.js" defer></script>
+  </body>
+</html>

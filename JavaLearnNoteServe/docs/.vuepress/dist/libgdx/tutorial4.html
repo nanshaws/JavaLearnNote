@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>4.1 帧动画 | 想飞跃的鱼</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/assets/java.png">
+    <script async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3949519489131784" crossorigin="anonymous"></script>
+    <meta name="description" content="想飞跃的鱼">
+    <meta name="author" content="nanshaws">
+    <meta name="keywords" content="java9到java21的新特性">
+    
+    <link rel="preload" href="/assets/css/0.styles.0b13978b.css" as="style"><link rel="preload" href="/assets/js/app.0f0c0a0b.js" as="script"><link rel="preload" href="/assets/js/2.40583da7.js" as="script"><link rel="preload" href="/assets/js/1.8d6a2866.js" as="script"><link rel="preload" href="/assets/js/14.10f1cf99.js" as="script"><link rel="prefetch" href="/assets/js/10.22fe1c30.js"><link rel="prefetch" href="/assets/js/11.c9ec652a.js"><link rel="prefetch" href="/assets/js/12.d7fcdecd.js"><link rel="prefetch" href="/assets/js/13.23d445f6.js"><link rel="prefetch" href="/assets/js/15.ad60ec71.js"><link rel="prefetch" href="/assets/js/16.85d7f603.js"><link rel="prefetch" href="/assets/js/17.93155b2b.js"><link rel="prefetch" href="/assets/js/18.207be5a1.js"><link rel="prefetch" href="/assets/js/19.7b8b8abc.js"><link rel="prefetch" href="/assets/js/20.21213842.js"><link rel="prefetch" href="/assets/js/21.b64a33f0.js"><link rel="prefetch" href="/assets/js/22.3f62f6f6.js"><link rel="prefetch" href="/assets/js/23.9dc0e61f.js"><link rel="prefetch" href="/assets/js/24.c66fd85a.js"><link rel="prefetch" href="/assets/js/25.0ced4503.js"><link rel="prefetch" href="/assets/js/26.3c33bb43.js"><link rel="prefetch" href="/assets/js/27.1d23e659.js"><link rel="prefetch" href="/assets/js/28.50874027.js"><link rel="prefetch" href="/assets/js/29.1d32284e.js"><link rel="prefetch" href="/assets/js/3.66fb2280.js"><link rel="prefetch" href="/assets/js/30.d5f45057.js"><link rel="prefetch" href="/assets/js/31.16596c7e.js"><link rel="prefetch" href="/assets/js/32.c795dff9.js"><link rel="prefetch" href="/assets/js/33.8a970256.js"><link rel="prefetch" href="/assets/js/34.f093baf9.js"><link rel="prefetch" href="/assets/js/35.030a1343.js"><link rel="prefetch" href="/assets/js/36.73387d9a.js"><link rel="prefetch" href="/assets/js/37.6be2bd73.js"><link rel="prefetch" href="/assets/js/38.d68655ca.js"><link rel="prefetch" href="/assets/js/39.a27a0cc6.js"><link rel="prefetch" href="/assets/js/4.9d42fcb6.js"><link rel="prefetch" href="/assets/js/40.a0edd650.js"><link rel="prefetch" href="/assets/js/41.909e5a9c.js"><link rel="prefetch" href="/assets/js/42.0253fc78.js"><link rel="prefetch" href="/assets/js/43.848435c8.js"><link rel="prefetch" href="/assets/js/44.05cb9cc6.js"><link rel="prefetch" href="/assets/js/45.c6c4a5ca.js"><link rel="prefetch" href="/assets/js/46.3dfdcc88.js"><link rel="prefetch" href="/assets/js/47.94b8c79a.js"><link rel="prefetch" href="/assets/js/48.badd48d0.js"><link rel="prefetch" href="/assets/js/49.18ec2b52.js"><link rel="prefetch" href="/assets/js/5.ecea7096.js"><link rel="prefetch" href="/assets/js/50.6b4e3d41.js"><link rel="prefetch" href="/assets/js/51.e8da6188.js"><link rel="prefetch" href="/assets/js/52.fda9a015.js"><link rel="prefetch" href="/assets/js/53.f81e93ac.js"><link rel="prefetch" href="/assets/js/54.f8fceb3e.js"><link rel="prefetch" href="/assets/js/55.be16539d.js"><link rel="prefetch" href="/assets/js/56.57f0f2cc.js"><link rel="prefetch" href="/assets/js/57.7e4bc46a.js"><link rel="prefetch" href="/assets/js/58.707baad1.js"><link rel="prefetch" href="/assets/js/59.40a0f865.js"><link rel="prefetch" href="/assets/js/6.9ef3b352.js"><link rel="prefetch" href="/assets/js/60.9542957e.js"><link rel="prefetch" href="/assets/js/61.6a8eeef8.js"><link rel="prefetch" href="/assets/js/7.27163696.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.025955af.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0b13978b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/logo.png" alt="想飞跃的鱼" class="logo"> <span class="site-name can-hide">想飞跃的鱼</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/docker/" class="nav-link">
+  Docker
+</a></div><div class="nav-item"><a href="https://nanshaws.top" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🚀 资源工具箱
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/libgdx/" class="nav-link router-link-active">
+  Libgdx
+</a></div><div class="nav-item"><a href="https://github.com/nanshaws/JavaLearnNote" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zh/guide/" class="nav-link">
+  Chinese
+</a></li><li class="dropdown-item"><!----> <a href="/en/guide/" class="nav-link">
+  English
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/docker/" class="nav-link">
+  Docker
+</a></div><div class="nav-item"><a href="https://nanshaws.top" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🚀 资源工具箱
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/libgdx/" class="nav-link router-link-active">
+  Libgdx
+</a></div><div class="nav-item"><a href="https://github.com/nanshaws/JavaLearnNote" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zh/guide/" class="nav-link">
+  Chinese
+</a></li><li class="dropdown-item"><!----> <a href="/en/guide/" class="nav-link">
+  English
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>4.1 帧动画</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/libgdx/tutorial4.html#_4-1-帧动画" class="sidebar-link">4.1 帧动画</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/libgdx/tutorial4.html#_4-2-骨骼动画" class="sidebar-link">4.2 骨骼动画</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/libgdx/tutorial4.html#_4-3-粒子系统" class="sidebar-link">4.3 粒子系统</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="_4-1-帧动画"><a href="#_4-1-帧动画" class="header-anchor">#</a> 4.1 帧动画</h2> <p>利用GDX Texture Packer创建实现帧动画</p> <p><img src="/assets/img/image-20240217202613135.d0f10dda.png" alt="image-20240217202613135"></p> <p>如同下面做法：</p> <p><img src="/assets/img/image-20240217202920030.7f2f3bc7.png" alt="image-20240217202920030"></p> <p>然后打包：</p> <p><img src="/assets/img/image-20240217203013998.84e166de.png" alt="image-20240217203013998"></p> <p><img src="/assets/img/image-20240217203110668.ce800016.png" alt="image-20240217203110668"></p> <p>将t23.atlas和t23.png保存到项目中</p> <p><img src="/assets/img/image-20240217203239195.317ef772.png" alt="image-20240217203239195"></p> <p><img src="data:image/png;base64,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" alt="image-20240217203332787"></p> <p>在libGDX中，可以使用TextureAtlas和Animation类来实现帧动画。以下是一个简单的示例：</p> <div class="language- extra-class"><pre class="language-text"><code>import com.badlogic.gdx.ApplicationAdapter;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.g2d.Animation;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.badlogic.gdx.utils.Array;
+
+public class FrameAnimationExample extends ApplicationAdapter {
+    private SpriteBatch batch;
+    private TextureAtlas textureAtlas;
+    private Animation&lt;TextureAtlas.AtlasRegion&gt; animation;
+    private float elapsedTime;
+
+    @Override
+    public void create() {
+        batch = new SpriteBatch();
+        textureAtlas = new TextureAtlas(Gdx.files.internal(&quot;animation_frames.atlas&quot;));
+        Array&lt;TextureAtlas.AtlasRegion&gt; frames = textureAtlas.getRegions();
+        animation = new Animation&lt;&gt;(0.02f, frames);
+        elapsedTime = 0;
+    }
+
+    @Override
+    public void render() {
+        Gdx.gl.glClearColor(0, 0, 0, 1);
+        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+        elapsedTime += Gdx.graphics.getDeltaTime();
+        batch.begin();
+        batch.draw(animation.getKeyFrame(elapsedTime, true), 50, 50);
+        batch.end();
+    }
+
+    @Override
+    public void dispose() {
+        batch.dispose();
+        textureAtlas.dispose();
+    }
+}
+ 
+</code></pre></div><p>结果展示：</p> <p><img src="/assets/img/image-20240217203508660.8f65a282.png" alt="image-20240217203508660"></p> <h2 id="_4-2-骨骼动画"><a href="#_4-2-骨骼动画" class="header-anchor">#</a> 4.2 骨骼动画</h2> <p>在libGDX中，可以使用SkeletonRenderer和SkeletonJson类来实现骨骼动画。以下是一个简单的示例：</p> <div class="language- extra-class"><pre class="language-text"><code>import com.badlogic.gdx.ApplicationAdapter;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.scenes.scene2d.ui.Skin;
+import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
+import com.badlogic.gdx.scenes.scene2d.utils.NinePatchDrawable;
+import com.esotericsoftware.spine.*;
+import com.esotericsoftware.spine.attachments.AtlasAttachmentLoader;
+import com.esotericsoftware.spine.attachments.SkeletonAttachment;
+
+public class SkeletonAnimationExample extends ApplicationAdapter {
+    private SkeletonRenderer skeletonRenderer;
+    private SkeletonJson json;
+    private SkeletonData skeletonData;
+    private Skeleton skeleton;
+    private float elapsedTime;
+
+    @Override
+    public void create() {
+        json = new SkeletonJson();
+        skeletonData = json.readSkeletonData(Gdx.files.internal(&quot;skeleton_animation.json&quot;));
+        skeleton = new Skeleton(skeletonData);
+        skeletonRenderer = new SkeletonRenderer();
+        skeletonRenderer.setPremultipliedAlpha(false);
+        elapsedTime = 0;
+    }
+
+    @Override
+    public void render() {
+        Gdx.gl.glClearColor(0, 0, 0, 1);
+        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+        elapsedTime += Gdx.graphics.getDeltaTime();
+        skeleton.updateWorldTransform();
+        skeletonRenderer.draw(skeleton);
+    }
+
+    @Override
+    public void dispose() {
+        skeletonData.dispose();
+    }
+}
+
+</code></pre></div><h2 id="_4-3-粒子系统"><a href="#_4-3-粒子系统" class="header-anchor">#</a> 4.3 粒子系统</h2> <p>利用GDX particle Editor 创建粒子，保存生成.p文件和.png</p> <p><img src="/assets/img/image-20240217201831013.a81429ed.png" alt="image-20240217201831013"></p> <p>在libGDX中，可以使用ParticleEffect类来实现粒子系统。以下是一个简单的示例：</p> <div class="language- extra-class"><pre class="language-text"><code>package com.mygdx.game.tutorial01;
+
+import com.badlogic.gdx.ApplicationAdapter;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.g2d.ParticleEffect;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+
+public class ParticleSystemExample extends ApplicationAdapter {
+    private SpriteBatch batch;
+    private ParticleEffect particleEffect;
+
+    @Override
+    public void create () {
+        batch = new SpriteBatch();
+
+        // 创建粒子效果
+        particleEffect = new ParticleEffect();
+        particleEffect.load(Gdx.files.internal(&quot;fire.p&quot;), Gdx.files.internal(&quot;particle&quot;));
+        particleEffect.start();
+    }
+
+    @Override
+    public void render () {
+        Gdx.gl.glClearColor(0, 0, 0, 1);
+        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+
+        // 更新和绘制粒子效果
+        particleEffect.update(Gdx.graphics.getDeltaTime());
+        batch.begin();
+        particleEffect.draw(batch);
+        batch.end();
+    }
+
+    @Override
+    public void dispose () {
+        batch.dispose();
+        particleEffect.dispose();
+    }
+}
+
+</code></pre></div><p>目录格式：</p> <p><img src="/assets/img/image-20240217201937874.7be20211.png" alt="image-20240217201937874"></p> <p>展示结果：</p> <p><img src="/assets/img/image-20240217202013097.4fa18409.png" alt="image-20240217202013097"></p> <p>正常出现在左下角。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">4/2/2024, 7:59:37 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.0f0c0a0b.js" defer></script><script src="/assets/js/2.40583da7.js" defer></script><script src="/assets/js/1.8d6a2866.js" defer></script><script src="/assets/js/14.10f1cf99.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>docker启动nginx | 想飞跃的鱼</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/assets/java.png">
+    <script async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3949519489131784" crossorigin="anonymous"></script>
+    <meta name="description" content="想飞跃的鱼">
+    <meta name="author" content="nanshaws">
+    <meta name="keywords" content="java9到java21的新特性">
+    
+    <link rel="preload" href="/assets/css/0.styles.0b13978b.css" as="style"><link rel="preload" href="/assets/js/app.0f0c0a0b.js" as="script"><link rel="preload" href="/assets/js/2.40583da7.js" as="script"><link rel="preload" href="/assets/js/1.8d6a2866.js" as="script"><link rel="preload" href="/assets/js/37.6be2bd73.js" as="script"><link rel="prefetch" href="/assets/js/10.22fe1c30.js"><link rel="prefetch" href="/assets/js/11.c9ec652a.js"><link rel="prefetch" href="/assets/js/12.d7fcdecd.js"><link rel="prefetch" href="/assets/js/13.23d445f6.js"><link rel="prefetch" href="/assets/js/14.10f1cf99.js"><link rel="prefetch" href="/assets/js/15.ad60ec71.js"><link rel="prefetch" href="/assets/js/16.85d7f603.js"><link rel="prefetch" href="/assets/js/17.93155b2b.js"><link rel="prefetch" href="/assets/js/18.207be5a1.js"><link rel="prefetch" href="/assets/js/19.7b8b8abc.js"><link rel="prefetch" href="/assets/js/20.21213842.js"><link rel="prefetch" href="/assets/js/21.b64a33f0.js"><link rel="prefetch" href="/assets/js/22.3f62f6f6.js"><link rel="prefetch" href="/assets/js/23.9dc0e61f.js"><link rel="prefetch" href="/assets/js/24.c66fd85a.js"><link rel="prefetch" href="/assets/js/25.0ced4503.js"><link rel="prefetch" href="/assets/js/26.3c33bb43.js"><link rel="prefetch" href="/assets/js/27.1d23e659.js"><link rel="prefetch" href="/assets/js/28.50874027.js"><link rel="prefetch" href="/assets/js/29.1d32284e.js"><link rel="prefetch" href="/assets/js/3.66fb2280.js"><link rel="prefetch" href="/assets/js/30.d5f45057.js"><link rel="prefetch" href="/assets/js/31.16596c7e.js"><link rel="prefetch" href="/assets/js/32.c795dff9.js"><link rel="prefetch" href="/assets/js/33.8a970256.js"><link rel="prefetch" href="/assets/js/34.f093baf9.js"><link rel="prefetch" href="/assets/js/35.030a1343.js"><link rel="prefetch" href="/assets/js/36.73387d9a.js"><link rel="prefetch" href="/assets/js/38.d68655ca.js"><link rel="prefetch" href="/assets/js/39.a27a0cc6.js"><link rel="prefetch" href="/assets/js/4.9d42fcb6.js"><link rel="prefetch" href="/assets/js/40.a0edd650.js"><link rel="prefetch" href="/assets/js/41.909e5a9c.js"><link rel="prefetch" href="/assets/js/42.0253fc78.js"><link rel="prefetch" href="/assets/js/43.848435c8.js"><link rel="prefetch" href="/assets/js/44.05cb9cc6.js"><link rel="prefetch" href="/assets/js/45.c6c4a5ca.js"><link rel="prefetch" href="/assets/js/46.3dfdcc88.js"><link rel="prefetch" href="/assets/js/47.94b8c79a.js"><link rel="prefetch" href="/assets/js/48.badd48d0.js"><link rel="prefetch" href="/assets/js/49.18ec2b52.js"><link rel="prefetch" href="/assets/js/5.ecea7096.js"><link rel="prefetch" href="/assets/js/50.6b4e3d41.js"><link rel="prefetch" href="/assets/js/51.e8da6188.js"><link rel="prefetch" href="/assets/js/52.fda9a015.js"><link rel="prefetch" href="/assets/js/53.f81e93ac.js"><link rel="prefetch" href="/assets/js/54.f8fceb3e.js"><link rel="prefetch" href="/assets/js/55.be16539d.js"><link rel="prefetch" href="/assets/js/56.57f0f2cc.js"><link rel="prefetch" href="/assets/js/57.7e4bc46a.js"><link rel="prefetch" href="/assets/js/58.707baad1.js"><link rel="prefetch" href="/assets/js/59.40a0f865.js"><link rel="prefetch" href="/assets/js/6.9ef3b352.js"><link rel="prefetch" href="/assets/js/60.9542957e.js"><link rel="prefetch" href="/assets/js/61.6a8eeef8.js"><link rel="prefetch" href="/assets/js/7.27163696.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.025955af.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0b13978b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/logo.png" alt="想飞跃的鱼" class="logo"> <span class="site-name can-hide">想飞跃的鱼</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/docker/" class="nav-link router-link-active">
+  Docker
+</a></div><div class="nav-item"><a href="https://nanshaws.top" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🚀 资源工具箱
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/libgdx/" class="nav-link">
+  Libgdx
+</a></div><div class="nav-item"><a href="https://github.com/nanshaws/JavaLearnNote" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zh/guide/" class="nav-link">
+  Chinese
+</a></li><li class="dropdown-item"><!----> <a href="/en/guide/" class="nav-link">
+  English
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/docker/" class="nav-link router-link-active">
+  Docker
+</a></div><div class="nav-item"><a href="https://nanshaws.top" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🚀 资源工具箱
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/libgdx/" class="nav-link">
+  Libgdx
+</a></div><div class="nav-item"><a href="https://github.com/nanshaws/JavaLearnNote" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zh/guide/" class="nav-link">
+  Chinese
+</a></li><li class="dropdown-item"><!----> <a href="/en/guide/" class="nav-link">
+  English
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>docker启动nginx</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docker/docker%E5%90%AF%E5%8A%A8nginx(%E5%AE%8C%E7%BE%8E%E8%BF%87%E7%A8%8B).html#第一步拉镜像" class="sidebar-link">第一步拉镜像</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docker/docker%E5%90%AF%E5%8A%A8nginx(%E5%AE%8C%E7%BE%8E%E8%BF%87%E7%A8%8B).html#第二步完美启动nginx容器" class="sidebar-link">第二步完美启动nginx容器</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docker/docker%E5%90%AF%E5%8A%A8nginx(%E5%AE%8C%E7%BE%8E%E8%BF%87%E7%A8%8B).html#第三步-检测" class="sidebar-link">第三步，检测</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="content__default"><h1 id="docker启动nginx"><a href="#docker启动nginx" class="header-anchor">#</a> docker启动nginx</h1> <h2 id="第一步拉镜像"><a href="#第一步拉镜像" class="header-anchor">#</a> 第一步拉镜像</h2> <p>这个版本号不写就是最新的</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">docker</span> pull nginx:版本号
+</code></pre></div><h2 id="第二步完美启动nginx容器"><a href="#第二步完美启动nginx容器" class="header-anchor">#</a> 第二步完美启动nginx容器</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token number">1</span>.随便创建并运行一个nginx容器
+<span class="token function">docker</span> run <span class="token parameter variable">--name</span> mynginx <span class="token parameter variable">-p</span> <span class="token number">80</span>:80 <span class="token parameter variable">-d</span> <span class="token parameter variable">--restart</span><span class="token operator">=</span>always nginx:latest
+
+<span class="token number">2</span>.创建对应的挂载目录
+<span class="token function">mkdir</span> <span class="token parameter variable">-p</span> /data/nginx
+<span class="token function">mkdir</span> <span class="token parameter variable">-p</span> /data/nginx/html/dist
+<span class="token function">mkdir</span> <span class="token parameter variable">-p</span> /data/nginx/logs
+
+<span class="token number">3</span>.复制nginx容器内的配置文件到对应的挂载目录下
+<span class="token number">1</span>.首先复制nginx配置文件地址
+<span class="token function">docker</span> <span class="token function">cp</span> mynginx:/etc/nginx /data/nginx
+<span class="token number">2</span>.再复制nginx网页文件地址
+<span class="token function">docker</span> <span class="token function">cp</span> mynginx:/usr/share/nginx/html /data/nginx/html/dist
+<span class="token number">3</span>.最后复制nginx日志文件地址
+<span class="token function">docker</span> <span class="token function">cp</span> mynginx:/var/log/nginx /data/nginx/logs
+
+<span class="token number">4</span>.创建启动容器
+
+<span class="token number">5</span>.检查nginx配置挂载目录成功！！！
+<span class="token function">docker</span> run <span class="token parameter variable">--name</span> nginx01 <span class="token parameter variable">-p</span> <span class="token number">8001</span>:80 <span class="token parameter variable">-v</span> /data/nginx/html/dist:/usr/share/nginx/html <span class="token parameter variable">-v</span>      /data/nginx/nginx/nginx.conf:/etc/nginx/ningx.conf <span class="token parameter variable">-v</span> /data/nginx/nginx/conf.d:/etc/nginx/conf.d <span class="token parameter variable">-d</span> nginx
+
+<span class="token number">6</span>.把一开始的mynginx容器删了，接下来开始检测
+<span class="token number">7</span>.经过本人测试，需要将/data/nginx/html/dist里面的html文件夹里面的index.html之类的移到外面<span class="token punctuation">(</span>dist目录<span class="token punctuation">)</span>，再将dist里面的html文件夹删除
+</code></pre></div><h2 id="第三步-检测"><a href="#第三步-检测" class="header-anchor">#</a> 第三步，检测</h2> <div class="language-bash extra-class"><pre class="language-bash"><code>root<span class="token comment"># curl 127.0.0.1:8001</span>
+<span class="token operator">&lt;</span><span class="token operator">!</span>DOCTYPE html<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>html<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>head<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>title<span class="token operator">&gt;</span>Welcome to nginx<span class="token operator">!</span><span class="token operator">&lt;</span>/title<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>style<span class="token operator">&gt;</span>
+html <span class="token punctuation">{</span> color-scheme: light dark<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+body <span class="token punctuation">{</span> width: 35em<span class="token punctuation">;</span> margin: <span class="token number">0</span> auto<span class="token punctuation">;</span>
+font-family: Tahoma, Verdana, Arial, sans-serif<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token operator">&lt;</span>/style<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>/head<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>body<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>h<span class="token operator"><span class="token file-descriptor important">1</span>&gt;</span>Welcome to nginx<span class="token operator">!</span><span class="token operator">&lt;</span>/h<span class="token operator"><span class="token file-descriptor important">1</span>&gt;</span>
+<span class="token operator">&lt;</span>p<span class="token operator">&gt;</span>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.<span class="token operator">&lt;</span>/p<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>p<span class="token operator">&gt;</span>For online documentation and support please refer to
+<span class="token operator">&lt;</span>a <span class="token assign-left variable">href</span><span class="token operator">=</span><span class="token string">&quot;http://nginx.org/&quot;</span><span class="token operator">&gt;</span>nginx.org<span class="token operator">&lt;</span>/a<span class="token operator">&gt;</span>.<span class="token operator">&lt;</span>br/<span class="token operator">&gt;</span>
+Commercial support is available at
+<span class="token operator">&lt;</span>a <span class="token assign-left variable">href</span><span class="token operator">=</span><span class="token string">&quot;http://nginx.com/&quot;</span><span class="token operator">&gt;</span>nginx.com<span class="token operator">&lt;</span>/a<span class="token operator">&gt;</span>.<span class="token operator">&lt;</span>/p<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token operator">&lt;</span>em<span class="token operator">&gt;</span>Thank you <span class="token keyword">for</span> using nginx.<span class="token operator">&lt;</span>/em<span class="token operator">&gt;</span><span class="token operator">&lt;</span>/p<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>/body<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>/html<span class="token operator">&gt;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">3/29/2024, 4:13:36 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.0f0c0a0b.js" defer></script><script src="/assets/js/2.40583da7.js" defer></script><script src="/assets/js/1.8d6a2866.js" defer></script><script src="/assets/js/37.6be2bd73.js" defer></script>
+  </body>
+</html>

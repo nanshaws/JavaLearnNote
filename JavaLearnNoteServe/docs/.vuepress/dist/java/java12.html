@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>java12新特性 | 想飞跃的鱼</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/assets/java.png">
+    <script async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3949519489131784" crossorigin="anonymous"></script>
+    <meta name="description" content="想飞跃的鱼">
+    <meta name="author" content="nanshaws">
+    <meta name="keywords" content="java9到java21的新特性">
+    
+    <link rel="preload" href="/assets/css/0.styles.0b13978b.css" as="style"><link rel="preload" href="/assets/js/app.0f0c0a0b.js" as="script"><link rel="preload" href="/assets/js/2.40583da7.js" as="script"><link rel="preload" href="/assets/js/1.8d6a2866.js" as="script"><link rel="preload" href="/assets/js/44.05cb9cc6.js" as="script"><link rel="prefetch" href="/assets/js/10.22fe1c30.js"><link rel="prefetch" href="/assets/js/11.c9ec652a.js"><link rel="prefetch" href="/assets/js/12.d7fcdecd.js"><link rel="prefetch" href="/assets/js/13.23d445f6.js"><link rel="prefetch" href="/assets/js/14.10f1cf99.js"><link rel="prefetch" href="/assets/js/15.ad60ec71.js"><link rel="prefetch" href="/assets/js/16.85d7f603.js"><link rel="prefetch" href="/assets/js/17.93155b2b.js"><link rel="prefetch" href="/assets/js/18.207be5a1.js"><link rel="prefetch" href="/assets/js/19.7b8b8abc.js"><link rel="prefetch" href="/assets/js/20.21213842.js"><link rel="prefetch" href="/assets/js/21.b64a33f0.js"><link rel="prefetch" href="/assets/js/22.3f62f6f6.js"><link rel="prefetch" href="/assets/js/23.9dc0e61f.js"><link rel="prefetch" href="/assets/js/24.c66fd85a.js"><link rel="prefetch" href="/assets/js/25.0ced4503.js"><link rel="prefetch" href="/assets/js/26.3c33bb43.js"><link rel="prefetch" href="/assets/js/27.1d23e659.js"><link rel="prefetch" href="/assets/js/28.50874027.js"><link rel="prefetch" href="/assets/js/29.1d32284e.js"><link rel="prefetch" href="/assets/js/3.66fb2280.js"><link rel="prefetch" href="/assets/js/30.d5f45057.js"><link rel="prefetch" href="/assets/js/31.16596c7e.js"><link rel="prefetch" href="/assets/js/32.c795dff9.js"><link rel="prefetch" href="/assets/js/33.8a970256.js"><link rel="prefetch" href="/assets/js/34.f093baf9.js"><link rel="prefetch" href="/assets/js/35.030a1343.js"><link rel="prefetch" href="/assets/js/36.73387d9a.js"><link rel="prefetch" href="/assets/js/37.6be2bd73.js"><link rel="prefetch" href="/assets/js/38.d68655ca.js"><link rel="prefetch" href="/assets/js/39.a27a0cc6.js"><link rel="prefetch" href="/assets/js/4.9d42fcb6.js"><link rel="prefetch" href="/assets/js/40.a0edd650.js"><link rel="prefetch" href="/assets/js/41.909e5a9c.js"><link rel="prefetch" href="/assets/js/42.0253fc78.js"><link rel="prefetch" href="/assets/js/43.848435c8.js"><link rel="prefetch" href="/assets/js/45.c6c4a5ca.js"><link rel="prefetch" href="/assets/js/46.3dfdcc88.js"><link rel="prefetch" href="/assets/js/47.94b8c79a.js"><link rel="prefetch" href="/assets/js/48.badd48d0.js"><link rel="prefetch" href="/assets/js/49.18ec2b52.js"><link rel="prefetch" href="/assets/js/5.ecea7096.js"><link rel="prefetch" href="/assets/js/50.6b4e3d41.js"><link rel="prefetch" href="/assets/js/51.e8da6188.js"><link rel="prefetch" href="/assets/js/52.fda9a015.js"><link rel="prefetch" href="/assets/js/53.f81e93ac.js"><link rel="prefetch" href="/assets/js/54.f8fceb3e.js"><link rel="prefetch" href="/assets/js/55.be16539d.js"><link rel="prefetch" href="/assets/js/56.57f0f2cc.js"><link rel="prefetch" href="/assets/js/57.7e4bc46a.js"><link rel="prefetch" href="/assets/js/58.707baad1.js"><link rel="prefetch" href="/assets/js/59.40a0f865.js"><link rel="prefetch" href="/assets/js/6.9ef3b352.js"><link rel="prefetch" href="/assets/js/60.9542957e.js"><link rel="prefetch" href="/assets/js/61.6a8eeef8.js"><link rel="prefetch" href="/assets/js/7.27163696.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.025955af.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0b13978b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/logo.png" alt="想飞跃的鱼" class="logo"> <span class="site-name can-hide">想飞跃的鱼</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/docker/" class="nav-link">
+  Docker
+</a></div><div class="nav-item"><a href="https://nanshaws.top" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🚀 资源工具箱
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/libgdx/" class="nav-link">
+  Libgdx
+</a></div><div class="nav-item"><a href="https://github.com/nanshaws/JavaLearnNote" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zh/guide/" class="nav-link">
+  Chinese
+</a></li><li class="dropdown-item"><!----> <a href="/en/guide/" class="nav-link">
+  English
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/docker/" class="nav-link">
+  Docker
+</a></div><div class="nav-item"><a href="https://nanshaws.top" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🚀 资源工具箱
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/libgdx/" class="nav-link">
+  Libgdx
+</a></div><div class="nav-item"><a href="https://github.com/nanshaws/JavaLearnNote" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zh/guide/" class="nav-link">
+  Chinese
+</a></li><li class="dropdown-item"><!----> <a href="/en/guide/" class="nav-link">
+  English
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>java12新特性</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/java/java12.html#teeting-collectors-in-the-stream-api" class="sidebar-link">Teeting Collectors in the Stream API</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/java/java12.html#updates-in-string-api" class="sidebar-link">Updates in String API</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/java/java12.html#updates-in-nio" class="sidebar-link">Updates in NIO</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/java/java12.html#updates-in-completablefuture" class="sidebar-link">Updates in CompletableFuture</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/java/java12.html#compact-number-formatting" class="sidebar-link">Compact Number Formatting</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="java12新特性"><a href="#java12新特性" class="header-anchor">#</a> java12新特性</h1> <ul><li>Teeting Collectors in the Stream API</li> <li>Updates in String API:</li> <li>Updates in NIO</li> <li>Updates in CompletableFuture</li> <li>Compact Number Formatting</li></ul> <h2 id="teeting-collectors-in-the-stream-api"><a href="#teeting-collectors-in-the-stream-api" class="header-anchor">#</a> Teeting Collectors in the Stream API</h2> <p>​        在Stream API中引入了新的收集器，如<code>teeing()</code>，它可以将两个流的元素组合在一起进行操作。例如，可以将一个流的元素与另一个流的元素相加，然后将结果收集到一个新的列表中。</p> <div class="language- extra-class"><pre class="language-text"><code>import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class TeetingCollectorExample {
+    public static void main(String[] args) {
+        Stream&lt;Integer&gt; stream1 = Stream.of(1, 2, 3, 4, 5);
+        Stream&lt;Integer&gt; stream2 = Stream.of(6, 7, 8, 9, 10);
+
+        List&lt;Integer&gt; result = Stream.concat(stream1, stream2)
+                .collect(Collectors.teeing(
+                        Collectors.summingInt(Integer::intValue),
+                        Collectors.counting(),
+                        (sum, count) -&gt; sum / count
+                ));
+
+        System.out.println(&quot;平均值： &quot; + result);
+    }
+}
+</code></pre></div><h2 id="updates-in-string-api"><a href="#updates-in-string-api" class="header-anchor">#</a> Updates in String API</h2> <p>String API进行了一些更新，包括<code>strip()</code>、<code>isBlank()</code>等方法的改进。</p> <div class="language- extra-class"><pre class="language-text"><code>public class StringAPIExample {
+    public static void main(String[] args) {
+        String str1 = &quot;  你好，世界！  &quot;;
+        String str2 = &quot;&quot;;
+
+        System.out.println(&quot;去除首尾空格： &quot; + str1.strip());
+        System.out.println(&quot;判断是否为空： &quot; + str2.isBlank());
+    }
+}
+</code></pre></div><h2 id="updates-in-nio"><a href="#updates-in-nio" class="header-anchor">#</a> Updates in NIO</h2> <p>NIO（New I/O）进行了一些更新，包括对文件锁定和文件属性的支持。</p> <div class="language- extra-class"><pre class="language-text"><code>import java.nio.channels.FileLock;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+
+public class NIOExample {
+    public static void main(String[] args) throws IOException {
+        Path path = Paths.get(&quot;test.txt&quot;);
+
+        try (FileChannel fileChannel = FileChannel.open(path, StandardOpenOption.WRITE)) {
+            FileLock lock = fileChannel.lock();
+            if (lock != null) {
+                System.out.println(&quot;文件锁定成功&quot;);
+            } else {
+                System.out.println(&quot;文件锁定失败&quot;);
+            }
+        }
+    }
+}
+</code></pre></div><h2 id="updates-in-completablefuture"><a href="#updates-in-completablefuture" class="header-anchor">#</a> Updates in CompletableFuture</h2> <p>CompletableFuture进行了一些更新，包括对异常处理的改进。</p> <div class="language- extra-class"><pre class="language-text"><code>import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
+
+public class CompletableFutureExample {
+    public static void main(String[] args) {
+        CompletableFuture&lt;String&gt; future = CompletableFuture.supplyAsync(() -&gt; {
+            if (true) {
+                throw new RuntimeException(&quot;发生异常&quot;);
+            }
+            return &quot;Hello, World!&quot;;
+        });
+
+        future.exceptionally(ex -&gt; {
+            System.out.println(&quot;处理异常： &quot; + ex.getMessage());
+            return &quot;Error&quot;;
+        }).thenAccept(System.out::println);
+    }
+}
+</code></pre></div><h2 id="compact-number-formatting"><a href="#compact-number-formatting" class="header-anchor">#</a> Compact Number Formatting</h2> <p>引入了紧凑数字格式化，可以更简洁地表示数字。</p> <div class="language- extra-class"><pre class="language-text"><code>import java.text.NumberFormat;
+import java.util.Locale;
+
+public class CompactNumberFormattingExample {
+    public static void main(String[] args) {
+        NumberFormat format = NumberFormat.getCompactNumberInstance(Locale.CHINA, NumberFormat.Style.SHORT);
+        System.out.println(&quot;紧凑数字格式化： &quot; + format.format(123456789));
+    }
+}
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">3/30/2024, 12:02:13 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.0f0c0a0b.js" defer></script><script src="/assets/js/2.40583da7.js" defer></script><script src="/assets/js/1.8d6a2866.js" defer></script><script src="/assets/js/44.05cb9cc6.js" defer></script>
+  </body>
+</html>

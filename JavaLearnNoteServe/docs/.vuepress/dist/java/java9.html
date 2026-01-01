@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>java9新特性 | 想飞跃的鱼</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/assets/java.png">
+    <script async="true" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3949519489131784" crossorigin="anonymous"></script>
+    <meta name="description" content="想飞跃的鱼">
+    <meta name="author" content="nanshaws">
+    <meta name="keywords" content="java9到java21的新特性">
+    
+    <link rel="preload" href="/assets/css/0.styles.0b13978b.css" as="style"><link rel="preload" href="/assets/js/app.0f0c0a0b.js" as="script"><link rel="preload" href="/assets/js/2.40583da7.js" as="script"><link rel="preload" href="/assets/js/1.8d6a2866.js" as="script"><link rel="preload" href="/assets/js/54.f8fceb3e.js" as="script"><link rel="prefetch" href="/assets/js/10.22fe1c30.js"><link rel="prefetch" href="/assets/js/11.c9ec652a.js"><link rel="prefetch" href="/assets/js/12.d7fcdecd.js"><link rel="prefetch" href="/assets/js/13.23d445f6.js"><link rel="prefetch" href="/assets/js/14.10f1cf99.js"><link rel="prefetch" href="/assets/js/15.ad60ec71.js"><link rel="prefetch" href="/assets/js/16.85d7f603.js"><link rel="prefetch" href="/assets/js/17.93155b2b.js"><link rel="prefetch" href="/assets/js/18.207be5a1.js"><link rel="prefetch" href="/assets/js/19.7b8b8abc.js"><link rel="prefetch" href="/assets/js/20.21213842.js"><link rel="prefetch" href="/assets/js/21.b64a33f0.js"><link rel="prefetch" href="/assets/js/22.3f62f6f6.js"><link rel="prefetch" href="/assets/js/23.9dc0e61f.js"><link rel="prefetch" href="/assets/js/24.c66fd85a.js"><link rel="prefetch" href="/assets/js/25.0ced4503.js"><link rel="prefetch" href="/assets/js/26.3c33bb43.js"><link rel="prefetch" href="/assets/js/27.1d23e659.js"><link rel="prefetch" href="/assets/js/28.50874027.js"><link rel="prefetch" href="/assets/js/29.1d32284e.js"><link rel="prefetch" href="/assets/js/3.66fb2280.js"><link rel="prefetch" href="/assets/js/30.d5f45057.js"><link rel="prefetch" href="/assets/js/31.16596c7e.js"><link rel="prefetch" href="/assets/js/32.c795dff9.js"><link rel="prefetch" href="/assets/js/33.8a970256.js"><link rel="prefetch" href="/assets/js/34.f093baf9.js"><link rel="prefetch" href="/assets/js/35.030a1343.js"><link rel="prefetch" href="/assets/js/36.73387d9a.js"><link rel="prefetch" href="/assets/js/37.6be2bd73.js"><link rel="prefetch" href="/assets/js/38.d68655ca.js"><link rel="prefetch" href="/assets/js/39.a27a0cc6.js"><link rel="prefetch" href="/assets/js/4.9d42fcb6.js"><link rel="prefetch" href="/assets/js/40.a0edd650.js"><link rel="prefetch" href="/assets/js/41.909e5a9c.js"><link rel="prefetch" href="/assets/js/42.0253fc78.js"><link rel="prefetch" href="/assets/js/43.848435c8.js"><link rel="prefetch" href="/assets/js/44.05cb9cc6.js"><link rel="prefetch" href="/assets/js/45.c6c4a5ca.js"><link rel="prefetch" href="/assets/js/46.3dfdcc88.js"><link rel="prefetch" href="/assets/js/47.94b8c79a.js"><link rel="prefetch" href="/assets/js/48.badd48d0.js"><link rel="prefetch" href="/assets/js/49.18ec2b52.js"><link rel="prefetch" href="/assets/js/5.ecea7096.js"><link rel="prefetch" href="/assets/js/50.6b4e3d41.js"><link rel="prefetch" href="/assets/js/51.e8da6188.js"><link rel="prefetch" href="/assets/js/52.fda9a015.js"><link rel="prefetch" href="/assets/js/53.f81e93ac.js"><link rel="prefetch" href="/assets/js/55.be16539d.js"><link rel="prefetch" href="/assets/js/56.57f0f2cc.js"><link rel="prefetch" href="/assets/js/57.7e4bc46a.js"><link rel="prefetch" href="/assets/js/58.707baad1.js"><link rel="prefetch" href="/assets/js/59.40a0f865.js"><link rel="prefetch" href="/assets/js/6.9ef3b352.js"><link rel="prefetch" href="/assets/js/60.9542957e.js"><link rel="prefetch" href="/assets/js/61.6a8eeef8.js"><link rel="prefetch" href="/assets/js/7.27163696.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.025955af.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0b13978b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/logo.png" alt="想飞跃的鱼" class="logo"> <span class="site-name can-hide">想飞跃的鱼</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/docker/" class="nav-link">
+  Docker
+</a></div><div class="nav-item"><a href="https://nanshaws.top" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🚀 资源工具箱
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/libgdx/" class="nav-link">
+  Libgdx
+</a></div><div class="nav-item"><a href="https://github.com/nanshaws/JavaLearnNote" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zh/guide/" class="nav-link">
+  Chinese
+</a></li><li class="dropdown-item"><!----> <a href="/en/guide/" class="nav-link">
+  English
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/docker/" class="nav-link">
+  Docker
+</a></div><div class="nav-item"><a href="https://nanshaws.top" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🚀 资源工具箱
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/libgdx/" class="nav-link">
+  Libgdx
+</a></div><div class="nav-item"><a href="https://github.com/nanshaws/JavaLearnNote" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/zh/guide/" class="nav-link">
+  Chinese
+</a></li><li class="dropdown-item"><!----> <a href="/en/guide/" class="nav-link">
+  English
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>java9新特性</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/java/java9.html#arrays" class="sidebar-link">arrays</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/java/java9.html#compare方法源码" class="sidebar-link">compare方法源码：</a></li><li class="sidebar-sub-header"><a href="/java/java9.html#equals方法源码" class="sidebar-link">equals方法源码：</a></li><li class="sidebar-sub-header"><a href="/java/java9.html#mismatch方法源码" class="sidebar-link">mismatch方法源码</a></li></ul></li><li><a href="/java/java9.html#collection" class="sidebar-link">collection</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/java/java9.html#list" class="sidebar-link">list</a></li><li class="sidebar-sub-header"><a href="/java/java9.html#map" class="sidebar-link">map</a></li><li class="sidebar-sub-header"><a href="/java/java9.html#set" class="sidebar-link">set</a></li></ul></li><li><a href="/java/java9.html#flowapi" class="sidebar-link">flowapi</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/java/java9.html#completablefuture" class="sidebar-link">completablefuture</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/java/java9.html#stream" class="sidebar-link">stream</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/java/java9.html#takewhile方法" class="sidebar-link">takeWhile方法</a></li><li class="sidebar-sub-header"><a href="/java/java9.html#dropwhile方法" class="sidebar-link">dropWhile方法</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="java9新特性"><a href="#java9新特性" class="header-anchor">#</a> java9新特性</h1> <p><strong>概述</strong>：java9对数组和集合的stream进行史诗级加强</p> <p><strong>arrays类:</strong></p> <ol><li><strong>compare方法</strong>：其本质效果就是：数组相等就返回0，不相等就返回-1</li> <li><strong>equals方法</strong>：其本质效果就是：数组相等就返回true，不相等就返回flase</li> <li><strong>mismatch方法</strong>：其本质效果就是：返回数组第一个不匹配的下标</li></ol> <p><strong>collection类:</strong></p> <ol><li><strong>List of(E e1)方法</strong>：返回list集合</li> <li><strong>&lt;K, V&gt; Map&lt;K, V&gt; of(K k1, V v1)</strong>：返回map集合</li> <li><strong>Set of(E e1, E e2, E e3)方法</strong>：返回set集合</li></ol> <p><strong>flowapi类</strong>:</p> <ol><li><strong>Publisher</strong>：负责发布消息，是数据源的角色。</li> <li><strong>Subscriber</strong>：负责订阅并处理消息，是消费者的角色。</li> <li><strong>Subscription</strong>：订阅控制类，用于发布者和订阅者之间的通信。</li> <li><strong>Processor</strong>：同时充当 Publisher 和 Subscriber 的角色，可以对数据进行处理后再发布。</li></ol> <p><strong>defaultMethod</strong>：接口可以设置多个default方法</p> <p><strong>completable</strong>：</p> <ol><li><code>thenAcceptBoth()</code>: 接受两个<code>CompletableFuture</code>对象作为参数，并在它们都完成时执行一个<code>BiConsumer</code>操作。</li> <li><code>runAfterBoth()</code>: 接受两个<code>CompletableFuture</code>对象作为参数，并在它们都完成时执行一个<code>Runnable</code>操作。</li> <li><code>acceptEither()</code>: 接受两个<code>CompletableFuture</code>对象作为参数，并在其中一个完成时执行一个<code>Consumer</code>操作。</li> <li><code>runAfterEither()</code>: 接受两个<code>CompletableFuture</code>对象作为参数，并在其中一个完成时执行一个<code>Runnable</code>操作。</li> <li><code>thenCompose()</code>: 接受一个<code>Function</code>作为参数，该函数将上一个<code>CompletableFuture</code>的结果转换为一个新的<code>CompletableFuture</code>对象。</li> <li><code>allOf()</code>: 接受一组<code>CompletableFuture</code>对象作为参数，并返回一个新的<code>CompletableFuture</code>对象，当所有给定的<code>CompletableFuture</code>对象都完成时，该新对象将被标记为完成。</li> <li><code>anyOf()</code>: 接受一组<code>CompletableFuture</code>对象作为参数，并返回一个新的<code>CompletableFuture</code>对象，当其中任何一个给定的<code>CompletableFuture</code>对象完成时，该新对象将被标记为完成。</li> <li><code>exceptionally()</code>: 接受一个<code>Function</code>作为参数，该函数将在发生异常时被调用，并返回一个新的<code>CompletableFuture</code>对象。</li> <li><code>handle()</code>: 接受一个<code>BiFunction</code>作为参数，该函数将在<code>CompletableFuture</code>完成或发生异常时被调用，并返回一个新的<code>CompletableFuture</code>对象。</li></ol> <p><strong>stream流:</strong></p> <ol><li><strong>takeWhile方法</strong>：<code>takeWhile</code>方法用于从流中获取满足指定条件的元素，直到遇到第一个不满足条件的元素为止。</li> <li><strong>dropWhile方法</strong>：<code>dropWhile</code>方法与<code>takeWhile</code>方法相反，它用于跳过流中满足指定条件的元素，直到遇到第一个不满足条件的元素为止。</li></ol> <h2 id="arrays"><a href="#arrays" class="header-anchor">#</a> arrays</h2> <h3 id="compare方法源码"><a href="#compare方法源码" class="header-anchor">#</a> compare方法源码：</h3> <div class="language- extra-class"><pre class="language-text"><code>public static int compare(int[] a, int[] b) {
+        if (a == b)
+            return 0;
+        if (a == null || b == null)
+            return a == null ? -1 : 1;
+
+        int i = ArraysSupport.mismatch(a, b,
+                                       Math.min(a.length, b.length));
+        if (i &gt;= 0) {
+            return Integer.compare(a[i], b[i]);
+        }
+
+        return a.length - b.length;
+    }
+</code></pre></div><h3 id="equals方法源码"><a href="#equals方法源码" class="header-anchor">#</a> equals方法源码：</h3> <div class="language- extra-class"><pre class="language-text"><code>public static boolean equals(int[] a, int[] a2) {
+        if (a==a2)
+            return true;
+        if (a==null || a2==null)
+            return false;
+
+        int length = a.length;
+        if (a2.length != length)
+            return false;
+
+        return ArraysSupport.mismatch(a, a2, length) &lt; 0;
+    }
+</code></pre></div><h3 id="mismatch方法源码"><a href="#mismatch方法源码" class="header-anchor">#</a> mismatch方法源码</h3> <div class="language- extra-class"><pre class="language-text"><code>  public static int mismatch(int[] a, int[] b) {
+        int length = Math.min(a.length, b.length); // Check null array refs
+        if (a == b)
+            return -1;
+
+        int i = ArraysSupport.mismatch(a, b, length);
+        return (i &lt; 0 &amp;&amp; a.length != b.length) ? length : i;
+    }
+</code></pre></div><h2 id="collection"><a href="#collection" class="header-anchor">#</a> collection</h2> <h3 id="list"><a href="#list" class="header-anchor">#</a> list</h3> <div class="language- extra-class"><pre class="language-text"><code>//creating empty List
+		List&lt;Employee&gt; empList1=List.of();
+		
+		//creating List with one object
+		List&lt;Employee&gt; empList2=List.of(new Employee(1,&quot;William Smith&quot;));
+		
+		//creating list with multiple objects, can accept upto 10 elements
+		List&lt;Employee&gt; empList3=List.of(new Employee(1,&quot;zhangsan&quot;),
+										new Employee(2,&quot;lisi&quot;),
+										new Employee(3,&quot;wangwu&quot;));
+</code></pre></div><h3 id="map"><a href="#map" class="header-anchor">#</a> map</h3> <div class="language- extra-class"><pre class="language-text"><code>//creating empty Set
+		Map&lt;Integer, Employee&gt; empMap1=Map.of();
+				
+		//creating Set with one object
+		Map&lt;Integer,Employee&gt; empMap2=Map.of(1, new Employee(101,&quot;William Smith&quot;));
+				
+		//creating Set with multiple objects, can accept upto 10 elements
+		Map&lt;Integer, Employee&gt; empMap3=Map.of(1,new Employee(101,&quot;William Smith&quot;),
+											2,new Employee(102,&quot;Rakesh Ahuja&quot;),
+											3,new Employee(103,&quot;David Monte&quot;));
+				
+		//creating arbitrary number of elements in Map 
+		Map&lt;Integer,Employee&gt; empMap4=Map.ofEntries(
+							entry(1, new Employee(101,&quot;William Smith&quot;)),
+							entry(2, new Employee(102, &quot;Rakesh Ahuja&quot;)),
+							entry(3, new Employee(103, &quot;David Monte&quot;))
+							);	
+</code></pre></div><h3 id="set"><a href="#set" class="header-anchor">#</a> set</h3> <div class="language- extra-class"><pre class="language-text"><code>//creating empty Set
+		Set&lt;Employee&gt; empSet1=Set.of();
+		
+		//creating Set with one object
+		Set&lt;Employee&gt; empSet2=Set.of(new Employee(101,&quot;William Smith&quot;));
+		
+		//creating Set with multiple objects, can accept upto 10 elements
+		Set&lt;Employee&gt; empSet3=Set.of(new Employee(101,&quot;William Smith&quot;),
+										new Employee(102,&quot;Rakesh Ahuja&quot;),
+										new Employee(103,&quot;David Monte&quot;));
+</code></pre></div><h2 id="flowapi"><a href="#flowapi" class="header-anchor">#</a> flowapi</h2> <div class="language- extra-class"><pre class="language-text"><code>import java.util.Arrays;
+import java.util.List;
+import java.util.concurrent.Flow;
+import java.util.concurrent.SubmissionPublisher;
+
+public class FlowAPIExample {
+    public static void main(String[] args) throws InterruptedException {
+        // 创建数据源
+        List&lt;Integer&gt; numbers = Arrays.asList(1, 2, 3, 4, 5);
+
+        // 创建发布者
+        SubmissionPublisher&lt;Integer&gt; publisher = new SubmissionPublisher&lt;&gt;();
+
+        // 创建订阅者
+        Flow.Subscriber&lt;Integer&gt; subscriber = new Flow.Subscriber&lt;&gt;() {
+            private Flow.Subscription subscription;
+
+            @Override
+            public void onSubscribe(Flow.Subscription subscription) {
+                this.subscription = subscription;
+                subscription.request(1); // 请求一个数据项
+            }
+
+            @Override
+            public void onNext(Integer item) {
+                System.out.println(&quot;接收到数据：&quot; + item);
+                subscription.request(1); // 继续请求下一个数据项
+            }
+
+            @Override
+            public void onError(Throwable throwable) {
+                System.err.println(&quot;发生错误：&quot; + throwable.getMessage());
+            }
+
+            @Override
+            public void onComplete() {
+                System.out.println(&quot;数据处理完成&quot;);
+            }
+        };
+
+        // 订阅数据流
+        publisher.subscribe(subscriber);
+
+        // 发布数据流
+        for (Integer number : numbers) {
+            publisher.submit(number);
+        }
+
+        // 关闭发布者
+        publisher.close();
+
+        // 等待异步处理完成
+        Thread.sleep(1000);
+    }
+}
+
+</code></pre></div><h2 id="completablefuture"><a href="#completablefuture" class="header-anchor">#</a> completablefuture</h2> <div class="language- extra-class"><pre class="language-text"><code>private static void completeOnTime() {
+    // TODO Auto-generated method stub
+    int value1 = 100;
+    int value2 = 200;
+
+    CompletableFuture.supplyAsync(() -&gt; {
+       try {
+          TimeUnit.SECONDS.sleep(5);
+       } catch (InterruptedException e) {
+          e.printStackTrace();
+       }
+       return value1 + value2;
+    }).completeOnTimeout(10, 2, TimeUnit.SECONDS).
+             thenAccept(result -&gt; System.out.println(&quot;Result from completeOnTime()==&gt; &quot;+result));
+    //waits for 2 seconds to complete, else returns 10 as a value
+    try {
+       TimeUnit.SECONDS.sleep(10);//waiting for 10 seconds
+    } catch (InterruptedException e) {
+       // TODO Auto-generated catch block
+       e.printStackTrace();
+    }
+}
+</code></pre></div><h2 id="stream"><a href="#stream" class="header-anchor">#</a> stream</h2> <h3 id="takewhile方法"><a href="#takewhile方法" class="header-anchor">#</a> <strong>takeWhile</strong>方法</h3> <div class="language- extra-class"><pre class="language-text"><code>import java.util.stream.Stream;
+
+public class TakeWhileExample {
+    public static void main(String[] args) {
+        Stream&lt;Integer&gt; numbers = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+        numbers.takeWhile(n -&gt; n &lt; 5)
+               .forEach(System.out::println); // 输出 1, 2, 3, 4
+    }
+}
+
+</code></pre></div><h3 id="dropwhile方法"><a href="#dropwhile方法" class="header-anchor">#</a> <strong>dropWhile方法</strong></h3> <div class="language- extra-class"><pre class="language-text"><code>import java.util.stream.Stream;
+
+public class DropWhileExample {
+    public static void main(String[] args) {
+        Stream&lt;Integer&gt; numbers = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+        numbers.dropWhile(n -&gt; n &lt; 5)
+               .forEach(System.out::println); // 输出 5, 6, 7, 8, 9, 10
+    }
+}
+
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">3/30/2024, 12:02:13 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.0f0c0a0b.js" defer></script><script src="/assets/js/2.40583da7.js" defer></script><script src="/assets/js/1.8d6a2866.js" defer></script><script src="/assets/js/54.f8fceb3e.js" defer></script>
+  </body>
+</html>
